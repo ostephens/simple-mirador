@@ -1,3 +1,4 @@
+https://iiif.bodleian.ox.ac.uk/iiif/manifest/15812b3d-2eb5-40be-a806-7d66e629fe39.json
 https://manifests.britishart.yale.edu/manifest/34
 https://iiif.harvardartmuseums.org/manifests/object/299843
 https://media.nga.gov/public/manifests/nga_highlights.json
