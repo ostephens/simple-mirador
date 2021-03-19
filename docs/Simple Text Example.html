@@ -54,7 +54,7 @@
 <div class="row" style="padding-left:16px;padding-right:16px;"><div class="col-12 col-lg-12"><div style="height:500px;" id="mirador"></div></div></div><div class="foonote"><ul><hr/><li id="section1"><a href="#ref1">[1]</a> IIIF manifests are simply a structured list of web based images resources that can be viewed in a IIIF compliant viewer, for more details see <a href='https://iiif.io/api/presentation/2.1/#table-of-contents'>https://iiif.io/api/presentation/2.1/#table-of-contents</a></li></ul></div></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12">	<br/<br/>
 	<h3>The Mirador TXT File</h3>
 	<figure>
-		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>https://manifests.britishart.yale.edu/manifest/34<br>https://iiif.harvardartmuseums.org/manifests/object/299843<br>https://media.nga.gov/public/manifests/nga_highlights.json<br></code></pre>
+		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>https://iiif.bodleian.ox.ac.uk/iiif/manifest/15812b3d-2eb5-40be-a806-7d66e629fe39.json<br>https://manifests.britishart.yale.edu/manifest/34<br>https://iiif.harvardartmuseums.org/manifests/object/299843<br>https://media.nga.gov/public/manifests/nga_highlights.json<br></code></pre>
 		<figcaption class=\"figure-caption\">The complete mirador JSON file used to define the manifests and images presented in this example.</figcaption>
 	</figure>	<br/<br/>
 	<h3>Page JSON Object</h3>
@@ -98,13 +98,14 @@
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
        windows: [{
-					"manifestId": "https://manifests.britishart.yale.edu/manifest/34"
+					"manifestId": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/15812b3d-2eb5-40be-a806-7d66e629fe39.json"
 					}],
        manifests: {
+"https:\/\/iiif.bodleian.ox.ac.uk\/iiif\/manifest\/15812b3d-2eb5-40be-a806-7d66e629fe39.json":{"provider":"Undefined"},
 "https:\/\/manifests.britishart.yale.edu\/manifest\/34":{"provider":"Undefined"},
 "https:\/\/iiif.harvardartmuseums.org\/manifests\/object\/299843":{"provider":"Undefined"},
 "https:\/\/media.nga.gov\/public\/manifests\/nga_highlights.json":{"provider":"Undefined"},},
-       "catalog": [{"manifestId": "https://manifests.britishart.yale.edu/manifest/34"}, {"manifestId": "https://iiif.harvardartmuseums.org/manifests/object/299843"}, {"manifestId": "https://media.nga.gov/public/manifests/nga_highlights.json"}],
+       "catalog": [{"manifestId": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/15812b3d-2eb5-40be-a806-7d66e629fe39.json"}, {"manifestId": "https://manifests.britishart.yale.edu/manifest/34"}, {"manifestId": "https://iiif.harvardartmuseums.org/manifests/object/299843"}, {"manifestId": "https://media.nga.gov/public/manifests/nga_highlights.json"}],
        
        });     
      });
